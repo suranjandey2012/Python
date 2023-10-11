@@ -1,0 +1,4 @@
+import sys as s
+
+for i,a in enumerate(s.argv):
+    print(i,a)

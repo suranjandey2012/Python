@@ -1,0 +1,20 @@
+
+import random as rand
+
+def dichotomous(sequence):
+    count=1
+    for i in range(len(sequence)-1):
+        if(1==(sequence[i]^sequence[i+1])):
+            count+=1
+    print(count)
+
+sequence=[]
+for i in range(10):
+    sequence.append(rand.randint(0,1))
+
+print(sequence)
+dichotomous(sequence)
+    
+#dichotomous([1,0,1,1,1,0])
+#randint() follows a uniform distribution
+#The runs always start from 1 so the actual count will be flips +1
